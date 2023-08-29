@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TwentyTwo" parent="Theme.Material3.DayNight.NoActionBar">
+<!--        <item name="colorPrimary">@color/dark_blue</item>-->
+<!--        <item name="colorPrimaryDark">@color/darker_blue</item>-->
+<!--        <item name="colorAccent">@color/light_blue</item>-->
+
+<!--        <item name="textFillColor">@color/light_gray</item>-->
+    </style>
+</resources>

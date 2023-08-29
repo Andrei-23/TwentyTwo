@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Twenty-Two</string>
+    <string name="title_text">22</string>
+    <string name="main_btn_start">Start</string>
+    <string name="main_btn_exit">Exit</string>
+    <string name="win_text">Level complete!</string>
+    <string name="win_time">Time:</string>
+    <string name="main_btn_set">Settings</string>
+    <string name="settings_text">Settings</string>
+    <string name="timer_switch_text">Timer</string>
+    <string name="sound_switch_text">Sound</string>
+    <string name="game_btn_next">Next level</string>
+    <string name="set_btn_back">Back</string>
+    <string name="set_btn_reset">Clear best</string>
+    <string name="set_btn_about">About</string>
+    <string name="title_activity_about_acivity">AboutAcivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+==
+    <string name="about">Made by Andrey Kruglov, 2023</string>
+    <string name="about_btn_back">Back</string>
+    <string name="default_best_time">Best time: --</string>
+    <string name="default_best_move">Min moves: --</string>
+</resources>

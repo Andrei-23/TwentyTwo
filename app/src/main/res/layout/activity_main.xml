@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="80dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/title_text"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/arial_round_bold"
+        android:textSize="96sp" />
+
+    <TextView
+        android:id="@+id/main_text_best_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/albert_sans"
+        android:text="@string/default_best_time"/>
+    <TextView
+        android:id="@+id/main_text_best_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/albert_sans"
+        android:text="@string/default_best_move"/>
+
+    <Button
+        android:id="@+id/main_btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:textSize="20dp"
+        android:fontFamily="@font/albert_sans"
+        android:text="@string/main_btn_start" />
+    <Button
+        android:id="@+id/main_btn_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:textSize="20dp"
+        android:fontFamily="@font/albert_sans"
+        android:text="@string/main_btn_set" />
+    <Button
+        android:id="@+id/main_btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:textSize="20dp"
+        android:fontFamily="@font/albert_sans"
+        android:text="@string/main_btn_exit" />
+
+
+</LinearLayout>

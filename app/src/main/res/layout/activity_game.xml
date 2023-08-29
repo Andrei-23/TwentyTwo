@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <com.example.twentytwo.GameView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="start"
+        android:paddingHorizontal="2dp">
+
+        <ImageButton
+            android:id="@+id/game_btn_back"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:contentDescription="Back button"
+            android:onClick="onClick"
+            app:srcCompat="@android:drawable/ic_media_rew"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:alpha="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:gravity="start">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/time_icon" />
+
+            <TextView
+                android:id="@+id/game_text_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:fontFamily="@font/albert_sans"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:text="0:00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:gravity="start">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/move_icon" />
+            <TextView
+                android:id="@+id/game_text_moves"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:fontFamily="@font/albert_sans"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:text="0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/level_complete_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Level complete!"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:fontFamily="@font/albert_sans"
+        android:textColor="@color/text_color"
+        android:paddingTop="80dp"/>
+
+    <LinearLayout
+        android:id="@+id/victory_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingHorizontal="80dp"
+        android:paddingVertical="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/albert_sans"
+                android:gravity="center"
+                android:text="Time:"
+                android:textColor="@color/dark_blue"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/victory_timer"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/albert_sans"
+                android:gravity="right"
+                android:text="0:00.0"
+                android:textColor="@color/text_color"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/albert_sans"
+                android:gravity="center"
+                android:text="Moves: "
+                android:textColor="@color/dark_blue"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/victory_move"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/albert_sans"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/text_color"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/game_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/albert_sans"
+            android:onClick="onClick"
+            android:textSize="20dp"
+            android:text="@string/game_btn_next" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

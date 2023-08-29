@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TwentyTwo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/very_light_blue</item>
+<!--        <item name="colorControlNormal">@color/light_gray</item>-->
+<!--        <item name="colorControlActivated">@color/very_light_blue</item>-->
+<!--        <item name="textFillColor">@color/white</item>-->
+    </style>
+
+    <style name="mySwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#888888</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="android:colorForeground">#AAAAAA</item>
+    </style>
+    <style name="Theme.TwentyTwo" parent="Base.Theme.TwentyTwo" />
+</resources>
